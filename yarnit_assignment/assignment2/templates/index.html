@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yarnit Assignment 2 (Generate Marketing Content)</title>
+</head>
+<body>
+  <h1>Yarnit Assignment 2 (Generate Marketing Content)</h1>
+  <form method="POST" action="/">
+    <label for="format">Enter The format:</label><br>
+    <input type="text" id="format" name="format"><br><br>
+
+    <label for="topic">Ask the topic:</label><br>
+    <input type="text" id="topic" name="topic"><br><br>
+
+    <label for="length">Enter The length:</label><br>
+    <input type="text" id="length" name="length"><br><br>
+
+    <label for="emotion">Select the emotion:</label><br>
+    <select id="emotion" name="emotion">
+      <option value="Neutral">Neutral</option>
+      <option value="Formal">Formal</option>
+      <option value="Happy">Happy</option>
+      <option value="Sad">Sad</option>
+    </select>
+    <br><br>
+    
+    <button type="submit">Generate</button>
+  </form>
+  <h4> Format:</h4>
+  <p id="format" class="card">{{format}}</p>
+
+  <h4> Topic:</h4>
+  <p id="topic" >{{topic}}</p>
+
+  <h4> Length:</h4>
+  <p id="length" >{{length}}</p>
+
+  <h4> Emotion:</h4>
+  <p id="emotion" >{{emotion}}</p>
+
+
+  <h4> Output:</h4>
+  <p id="output" >{{output}}</p>
+</body>
+</html>
